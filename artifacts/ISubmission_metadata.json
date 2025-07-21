@@ -1,0 +1,247 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "counter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getMySharedHaikus",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "author",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "line1",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "line2",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "line3",
+								"type": "string"
+							}
+						],
+						"internalType": "struct ISubmission.Haiku[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_line1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_line2",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_line3",
+						"type": "string"
+					}
+				],
+				"name": "mintHaiku",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "shareHaiku",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ERC721.sol": "ISubmission"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ERC721.sol": {
+			"keccak256": "0x572109cfb8d37abb8e78b0ce6ebec18368eb22faf98df758ca50bedf75faa042",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://33aaf5c9c4ee60c869a052823a6a5f6e26e5482ce00c8c28a0fa10889119e023",
+				"dweb:/ipfs/QmTZKfqg8XY3xpXZPQivnGJV2Ktwj2U7wLTuWd8nz7QaWk"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/interfaces/draft-IERC6093.sol": {
+			"keccak256": "0x85cf779582f7860b00bba1d259be00e754bfbac3c2339e324d0113d682d9e9f9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2ddf369affd106e2a9e2b8a22a6ce3da8a6ccda14c6ba5b8c87f6b08169e6318",
+				"dweb:/ipfs/QmNadAttd47ycHShxhk33JUJhrbzmyZQ7mHs7WEyG4Qkmp"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol": {
+			"keccak256": "0x129f576cdb70ad97af74c748141a2c386bffabfbfec676335073246f3aad8f15",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b6556748cc6532fd78baaa5196b2401e02fa61d4cdc2a27ff0c6cdaf06cfb687",
+				"dweb:/ipfs/QmWLk4ycitFguvcymtZnmhYNfu6JEEkWqH3GVi91aZ6zw6"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/IERC721.sol": {
+			"keccak256": "0xa6598930755a1ad791f6ea1f171c6898d6fa8ef6846c37412cf6833206638c36",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6ac4201401ed41f5b2eb8b43379c1ab68384d1263c6d419cf06417fc427f11b6",
+				"dweb:/ipfs/QmUcRAdRF9QC8knCD2bTBWmq7RdJDkQ9YUFLHgaDSNLEji"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/IERC721Receiver.sol": {
+			"keccak256": "0x87c381a79f708d2a5c4cb794163621c8040179677689573a28ef7a89237bf37c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a3952e14ed0321006ed8a8b77c4b61e54f1103ab7c8d5ad332bff34bbd148be1",
+				"dweb:/ipfs/QmRj2crUkPXvQSs4yHjMEcwuqEwpD2ep5wm1JcHEvdVUB9"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
+			"keccak256": "0x388e5f10da1dd5327781803f457ebe132f6b62b2dd684d9b723d797e0bfeb6b1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cc9b94bd98d54dc4aeb0505c31250618949c5b9d532ec9e81db8a3b81979fcc5",
+				"dweb:/ipfs/QmSo1Mi1xJJmxGF5ybrTkYhyBzsfnY2ouEKJvAypZtXJQ9"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/utils/ERC721Utils.sol": {
+			"keccak256": "0xfcb027860c2bae678ed490facb3905599a6c9764bb468d8e2d2617c7b1b1023f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f4f7864fd6dfb6eed509ff93e89a2da1f7be7602832939f1fb7b71e04ab84729",
+				"dweb:/ipfs/QmUV1WVJMGAKq2KNKJwLuyBY3ydnkDCuxDzndB7jLcD78b"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Context.sol": {
+			"keccak256": "0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12",
+				"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Panic.sol": {
+			"keccak256": "0xf7fe324703a64fc51702311dc51562d5cb1497734f074e4f483bfb6717572d7a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c6a5ff4f9fd8649b7ee20800b7fa387d3465bd77cf20c2d1068cd5c98e1ed57a",
+				"dweb:/ipfs/QmVSaVJf9FXFhdYEYeCEfjMVHrxDh5qL4CGkxdMWpQCrqG"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Strings.sol": {
+			"keccak256": "0x1402d9ac66fbca0a2b282cd938f01f3cd5fb1e4c696ed28b37839401674aef52",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d3e6c46b6d1ea36bd73e0ac443a53504089167b98baa24923d702a865a38d211",
+				"dweb:/ipfs/QmdutUpr5KktmvgtqG2v96Bo8nVKLJ3PgPedxbsRD42CuQ"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/ERC165.sol": {
+			"keccak256": "0x41ddfafe0d00dc22e35119d41cb0ca93673960689d35710fd12875139e64bd9f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://49d90142e15cdc4ca00de16e1882fa0a0daad8b46403628beb90c67a3efe4fc4",
+				"dweb:/ipfs/QmNizYnFNcGixHxsknEccr2cQWyyQBqFF7h2bXLmefQz6M"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol": {
+			"keccak256": "0x4ee0e04cc52827588793a141d5efb9830f179a17e80867cc332b3a30ceb30fd9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://17d8f47fce493b34099ed9005c5aee3012488f063cfe1c34ed8f9e6fc3d576e5",
+				"dweb:/ipfs/QmZco2GbZZhEMvG3BovyoGMAFKvfi2LhfNGQLn283LPrXf"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/math/Math.sol": {
+			"keccak256": "0x1225214420c83ebcca88f2ae2b50f053aaa7df7bd684c3e878d334627f2edfc6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6c5fab4970634f9ab9a620983dc1c8a30153981a0b1a521666e269d0a11399d3",
+				"dweb:/ipfs/QmVRnBC575MESGkEHndjujtR7qub2FzU9RWy9eKLp4hPZB"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/math/SafeCast.sol": {
+			"keccak256": "0x195533c86d0ef72bcc06456a4f66a9b941f38eb403739b00f21fd7c1abd1ae54",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b1d578337048cad08c1c03041cca5978eff5428aa130c781b271ad9e5566e1f8",
+				"dweb:/ipfs/QmPFKL2r9CBsMwmUqqdcFPfHZB2qcs9g1HDrPxzWSxomvy"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/math/SignedMath.sol": {
+			"keccak256": "0xb1970fac7b64e6c09611e6691791e848d5e3fe410fa5899e7df2e0afd77a99e3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://db5fbb3dddd8b7047465b62575d96231ba8a2774d37fb4737fbf23340fabbb03",
+				"dweb:/ipfs/QmVUSvooZKEdEdap619tcJjTLcAuH6QBdZqAzWwnAXZAWJ"
+			]
+		}
+	},
+	"version": 1
+}
